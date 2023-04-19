@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background: #BDBDBD;
+}
+
+#calcContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #ffffff;
+  width: 80%;
+  height: auto;
+  box-shadow: 0.5em 0.5em 1.2em rgba(0, 0, 0, 0.2);
+}
+
+.result-clear {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.result-clear input[type=text].result {
+  display: block;
+  border: 0;
+  padding-top: 1%;
+  padding-left: 5%;
+  width: 72%;
+  height: 60px;
+  font-size: 1.4em;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+.grid-buttons {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #212121;
+}
+
+input[type=button] {
+  flex-grow: 1;
+  width: 25%;
+  height: auto;
+  padding: 4%;
+  border: 0;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ffffff;
+  background: #212121;
+  border: 2px solid #212121;
+}
+
+input[type=button]:focus {
+  outline: 0;
+}
+
+input[type=button].clear {
+  width: 25.5%;
+  font-size: 20px;
+  background: #009688;
+  border: 2px solid #009688;
+}
+
+.grid-buttons input[type=button].math {
+  background: #757575;
+  border: 2px solid #757575;
+}
+
+.grid-buttons input[type=button]:hover,
+input[type=button].clear:hover {
+  background: #00BCD4;
+  border: 2px solid #00BCD4;
+  transition: 0.3s ease;
+}
